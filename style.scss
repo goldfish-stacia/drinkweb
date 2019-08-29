@@ -1,4 +1,28 @@
-header {
+* {
+    border: 0.1px solid #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav {
+    height: 10%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
     background-color: #000;
     color: #fff;
+    
+    .logo {
+        color: gold;
+    }
+    
+    a {
+        display: inline-block;
+        width: 120px;
+
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    
 }

@@ -1,5 +1,29 @@
-header {
+* {
+  border: 0.1px solid #fff;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#nav {
+  height: 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
   background-color: #000;
   color: #fff;
+}
+
+#nav .logo {
+  color: gold;
+}
+
+#nav a {
+  display: inline-block;
+  width: 120px;
+  text-decoration: none;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
