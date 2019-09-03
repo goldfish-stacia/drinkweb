@@ -1,5 +1,4 @@
 * {
-  border: 0.1px solid #fff;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -7,23 +6,84 @@
 }
 
 #nav {
-  height: 10%;
+  height: 10vh;
+  padding: 15px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
-  background-color: #000;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  background-color: #111;
   color: #fff;
+  position: fixed;
+  width: 100%;
 }
 
-#nav .logo {
+#nav #logo {
   color: gold;
+  font-size: 1.3em;
+  padding: 0 15px;
+  letter-spacing: 1px;
 }
 
-#nav a {
+#nav #logo #logo_zh {
+  font-size: 0.5em;
+  letter-spacing: 8.5px;
+}
+
+#nav nav {
+  padding-top: 10px;
+}
+
+#nav nav a {
   display: inline-block;
-  width: 120px;
+  width: 140px;
   text-decoration: none;
   color: #ffffff;
+}
+
+#nav nav a img {
+  width: 30px;
+  float: left;
+  padding-right: 7px;
+}
+
+#nav a:hover span {
+  opacity: 0.5;
+}
+
+#banner {
+  height: 100vh;
+  background-image: url(img/banner.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+#about {
+  height: 90vh;
+}
+
+#about .title {
+  display: inline-block;
+  width: 140px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#about .title img {
+  width: 30px;
+  float: left;
+  padding-right: 7px;
+}
+
+#about #about_bg {
+  -webkit-filter: blur(2px) brightness(30%);
+          filter: blur(2px) brightness(30%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url(img/about.jpg);
+  background-size: 100%;
+  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */
